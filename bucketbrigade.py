@@ -11,7 +11,7 @@ import logging
 Simple job utility for S3 buckets 
 
 """
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 class BucketCopyWorker(threading.Thread):
     def __init__(self,  queue, \
                         srcBucket, tgtBucket,\

@@ -32,7 +32,6 @@ try:
 except:
     raise ValueError('Invalid number of workers: %s' % options.parallel)
 
-logging.basicConfig(filename="b2b.log",level=logging.DEBUG)
 if __name__ == "__main__":
     if options.job is not None:
         job = BucketBrigadeJob( options.job, num_workers )
