@@ -11,5 +11,5 @@ setup(
     author="Ajish George",
     author_email="root@rootedinsights.com",
     description="A simple utility to allow syncing/copying S3 bucket files across AWS accounts.",
-    url="http://github.com/rootedinsights/bucketbrigade"
+    url="http://github.com/uhjish/bucketbrigade"
 )
