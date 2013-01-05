@@ -5,11 +5,11 @@ setup(
     packages = find_packages(),
     scripts = ['b2b.py'],
     install_requires = ['boto>=1.9'],
-    package_date = {
+    package_data = {
             '':['*.job','*.md']
             },
-    author="Ajish George"
-    author_email="root@rootedinsights.com"
-    description="A simple utility to allow syncing/copying S3 bucket files across AWS accounts."
+    author="Ajish George",
+    author_email="root@rootedinsights.com",
+    description="A simple utility to allow syncing/copying S3 bucket files across AWS accounts.",
     url="http://github.com/rootedinsights/bucketbrigade"
 )
