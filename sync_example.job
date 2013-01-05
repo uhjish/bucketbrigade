@@ -1,0 +1,38 @@
+{
+  "job":{
+    "type":"sync",
+    "source":
+      { 
+        "owner":"source-service-user",
+        "bucket":"source-bucket",
+        "key-prefix":"/some/prefix/"
+      },
+    "target":
+      {
+        "owner":"target-s3-user",
+        "bucket":"target-bucket",
+        "key-prefix":"/another/prefix"
+      },
+    "options":
+      {
+        "recursive":true,
+        "allow-acl-change":true,
+        "stop-on-exception":false
+      }
+  },
+  "users":
+    {
+      "source-service-user":
+        { "description" : "sourceresolver provided credentials",
+          "key":"AKyourkeyQATQ",
+          "secret-key":"yoursecretkeye1+i",
+          "canonical-id":"4cf84378f9dyourreallyreallylongcanonicalid8e35fd9075290"
+        },
+      "target-s3-user":
+        { "description" : "target S3 bucket credentials",
+          "key":"AKIAkeyhereC63ADA",
+          "secret-key":"VQKsecretkey3Ysxa",
+          "canonical-id":"e443eac08reallyreallylongidf3ec1c3842b76c577c0"
+        }
+    }
+}
